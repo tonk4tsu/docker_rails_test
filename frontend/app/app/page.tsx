@@ -6,7 +6,7 @@ type Post = {
 };
 
 async function getPost() {
-  const res = await fetch('https://backend:3000/posts');
+  const res = await fetch('http://backend:3000/posts');
 
   if (!res.ok) {
     throw new Error('Failed to fetch Post');
